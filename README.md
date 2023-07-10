@@ -73,6 +73,7 @@ See [LICENSE](/LICENSE) file in contatining directory
 Used the references and tutorials from:
 
 - Multiple activities from 10-OOP class lessons and files.
+- [prashant_srivastava's article on validating hex color codes](https://www.geeksforgeeks.org/how-to-validate-hexadecimal-color-code-using-regular-expression/#)
 - The "Helpful SVG Resources" section links in the 10-OOP/02-Challenge README.md file:
 
   - [Example SVG](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
