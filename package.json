@@ -1,0 +1,23 @@
+{
+  "name": "svg-logo-generator",
+  "version": "1.0.0",
+  "description": "A .svg image generator that creates a simple vector logo based on a few user terminal inputs.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dustybrigsby/SVG-Logo-Generator"
+  },
+  "author": "dustybrigsby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dustybrigsby/SVG-Logo-Generator/issues"
+  },
+  "homepage": "https://github.com/dustybrigsby/SVG-Logo-Generator#readme"
+}
