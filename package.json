@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dustybrigsby/SVG-Logo-Generator/issues"
   },
-  "homepage": "https://github.com/dustybrigsby/SVG-Logo-Generator#readme"
+  "homepage": "https://github.com/dustybrigsby/SVG-Logo-Generator#readme",
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
 }
