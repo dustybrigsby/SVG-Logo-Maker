@@ -50,13 +50,13 @@ async function getInput() {
             shapeXml = new Square(data.shapeColor, data.shape).render();
         }
         else if (data.shape === 'triangle') {
-            shapeXml = new Triangle("green", "triangle").render();
+            shapeXml = new Triangle(data.shapeColor, data.shape).render();
         }
         else {
             new Error('Error, restart and select a shape.');
         }
 
-        const svgLogo = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink>
+        const svgLogo = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 ${ shapeXml }
 ${ textXml }
 </svg>`;

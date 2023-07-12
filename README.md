@@ -49,15 +49,16 @@ In the Terminal, navigate to the containing directory and enter "node index.js" 
 
 Enter answers to all of the prompts.
 
-A .svg image file is created in the containing directory based on your responses.
+A .svg image file is created in the "examples" directory based on your responses.
 
-[Example Video](link)
+[Example Video](https://drive.google.com/file/d/1ZRKkiyeLEUMquMcfyyrUIZvfnZa2CNT7/view?usp=sharing)
 
 <a name="screenshot"></a>
 
 ## Screenshot
 
-![Screenshot of running the SVG Logo Generator in the terminal.](screenshot file)
+![Screenshot of running the SVG Logo Generator in the terminal.](/lib/screenshot.jpg)
+![Example logo.svg file.](/examples/logo.svg)
 
 <a name="license"></a>
 
@@ -88,9 +89,13 @@ Used the references and tutorials from:
 
   - [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
+- [W3 Schools SVG Tutorials](https://www.w3schools.com/graphics/svg_inhtml.asp)
+
 <a name="test"></a>
 
 ## Test
+
+Use Jest to run .test.js files by entering "npm test" in the terminal.
 
 <a name="questions"></a>
 

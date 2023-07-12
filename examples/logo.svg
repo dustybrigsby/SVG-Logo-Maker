@@ -1,0 +1,4 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<polygon points="150, 20 240, 180 60, 180" fill="purple" />
+<text x="150" y="140" font-size="120" text-anchor="middle" fill="green">DDB</text>
+</svg>
