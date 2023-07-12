@@ -2,7 +2,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Circle, Square, Triangle } = require('./lib/shapes.js');
 const Text = require('./lib/text.js');
-const render = require('./lib/render.js');
 
 const questions = [
     {
@@ -39,23 +38,30 @@ async function getInput() {
             shape: answers.shape,
             shapeColor: answers.shapeColor
         };
-        const textXml = new Text.renderText(data.text, data.textColor);
+        let textXml = new Text;
+        textXml = textXml.renderText(data.text, data.textColor);
+
         let shapeXml;
 
         if (data.shape === 'circle') {
-            shapeXml = new Circle(data.shapeColor, data.shape).makeCircle();
+            shapeXml = new Circle(data.shapeColor, data.shape).render();
         }
         else if (data.shape === 'square') {
-            shapeXml = new Square(data.shapeColor, data.shape).makeSquare();
+            shapeXml = new Square(data.shapeColor, data.shape).render();
         }
         else if (data.shape === 'triangle') {
-            shapeXml = new Triangle("green", "triangle").makeTriangle();
+            shapeXml = new Triangle("green", "triangle").render();
         }
         else {
             new Error('Error, restart and select a shape.');
         }
 
-        writeToFile(svgData);
+        const svgLogo = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink>
+${ shapeXml }
+${ textXml }
+</svg>`;
+
+        writeToFile(svgLogo);
 
     } catch (error) {
         console.error('getInput Error:', error);
