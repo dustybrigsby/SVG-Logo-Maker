@@ -1,9 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./lib/shapes.js');
-const text = require('./lib/text.js');
+const { Circle, Square, Triangle } = require('./lib/shapes.js');
+const Text = require('./lib/text.js');
 const render = require('./lib/render.js');
-const Color = require('./lib/colors.js');
 
 const questions = [
     {
@@ -40,8 +39,21 @@ async function getInput() {
             shape: answers.shape,
             shapeColor: answers.shapeColor
         };
+        const textXml = new Text.renderText(data.text, data.textColor);
+        let shapeXml;
 
-
+        if (data.shape === 'circle') {
+            shapeXml = new Circle(data.shapeColor, data.shape).makeCircle();
+        }
+        else if (data.shape === 'square') {
+            shapeXml = new Square(data.shapeColor, data.shape).makeSquare();
+        }
+        else if (data.shape === 'triangle') {
+            shapeXml = new Triangle("green", "triangle").makeTriangle();
+        }
+        else {
+            new Error('Error, restart and select a shape.');
+        }
 
         writeToFile(svgData);
 
