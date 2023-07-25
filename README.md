@@ -1,4 +1,4 @@
-# SVG Logo Generator
+# SVG Logo Maker
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,7 +17,7 @@
 
 ## Description
 
-A .svg image generator that creates a simple vector logo based on a few user terminal inputs.
+A .svg image maker that creates a simple vector logo based on a few user terminal inputs.
 
 <a name="installation"></a>
 
@@ -45,7 +45,7 @@ For testing:
 
 ## Usage
 
-In the Terminal, navigate to the containing directory and enter "node index.js" to run the SVG Logo Generator.
+In the Terminal, navigate to the containing directory and enter "node index.js" to run the SVG Logo Maker.
 
 Enter answers to all of the prompts.
 
@@ -57,7 +57,7 @@ A .svg image file is created in the "examples" directory based on your responses
 
 ## Screenshot
 
-![Screenshot of running the SVG Logo Generator in the terminal.](/lib/screenshot.jpg)
+![Screenshot of running the SVG Logo Maker in the terminal.](/lib/screenshot.jpg)
 ![Example logo.svg file.](/examples/logo.svg)
 
 <a name="license"></a>
@@ -101,7 +101,7 @@ Use Jest to run .test.js files by entering "npm test" in the terminal.
 
 ## Questions?
 
-[SVG Logo Generator GitHub Repository](https://github.com/dustybrigsby/10-OOP-Challenge)
+[SVG Logo Maker GitHub Repository](https://github.com/dustybrigsby/10-OOP-Challenge)
 
 If not found there, you can email me at:
 
